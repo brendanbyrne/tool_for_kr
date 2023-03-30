@@ -39,7 +39,7 @@ def make_extension_lowercase(p: Path) -> None:
     if len(p.suffixes) != 1:
         return
 
-    lower_case_version = p.parent / (p.stem + p.suffix.lower())
+    lower_case_version = p.with_suffix(p.suffix.lower())
 
     if p == lower_case_version:
         print(f"Already matches")
