@@ -42,7 +42,6 @@ def make_extension_lowercase(p: Path) -> None:
     lower_case_version = p.with_suffix(p.suffix.lower())
 
     if p == lower_case_version:
-        print(f"Already matches")
         return
 
     safe_rename(p, lower_case_version)
