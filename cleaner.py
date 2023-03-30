@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Iterator
 
-ROOT = Path("/home/bbyrne/projects/tool_for_kr/test_directory")
+ROOT = Path("test_directory")
 TEST_MODE=True
 
 def all_not_dirs(root: Path) -> Iterator[Path]:
