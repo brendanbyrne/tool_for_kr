@@ -37,7 +37,7 @@ def remove_apple_hidden_file(p: Path) -> None:
 
 def make_extension_lowercase(p: Path) -> None:
     if len(p.suffixes) != 1:
-        print(f"Skipping {p}")
+        return
 
     lower_case_version = p.parent / (p.stem + p.suffix.lower())
 
